@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Login Page</title> 
+<style>
+input[type=number], input[type=password] {
+  width: 35%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+.login{
+  background-color: rgb(232, 141, 114);;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 25%;
+  opacity: 0.9;
+  border: 1px solid black;
+}
+
+.login:hover {
+  background-color: black;
+}
+.modal {
+  background-color: gray;
+  padding-top: 10px;
+  border: 1px solid gray;
+  margin: 5% auto 15% auto; 
+  width: 50%;
+ box-shadow: 5px 5px grey, 10px 10px  lightgrey, 15px 15px  white;
+  
+}
+</style>
+</head> 
+<body style="background-color:rgb(230, 141, 114);"> 
+<div id=“id02” class="modal">
+<h2 align="center" style="font-size:80px;"> Login </h2> 
+<h3 align="center">  Please fill your login details.</h3>
+<form action="login.php" method="POST" align="center">
+     Enter userID: <input type="number" name="uid" style="font-size:30px;"placeholder="Enter your userID" required><br>
+    Enter Password <input type="password" name="pass" style="font-size:30px;"placeholder="Enter Password" required><br><br>
+    <input type="submit" class="login" value="Submit"><br>
+</form>
+</div>
+</body> 
+</html>
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Med View</title> 
+<style>
+
+a{display: inline-block;
+   padding:10px 30px;
+   font-size: 20px;
+   background: #333;
+   color:#fff;
+   margin:0 5px;
+   text-transform: capitalize;
+   text-align: center;
+}
+a:hover, a:active {
+  background-color: orange;
+  color: white;
+  }
+
+    td,th,tr,table{
+        border: 2px solid black;
+        border-collapse: collapse;
+    }
+    body{
+   
+  background-color: white; 
+  background-image: linear-gradient(-90deg,lightblue,orange);
+ 
+    }
+   .grid { 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+  }
+.grid > article {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.9);
+}
+.grid > article img {
+  max-width: 100%;
+}
+.text {
+  padding: 0 20px 20px;
+}
+</style>
+</head>
+<body >
+
+    <a href="home.html">Go back to home page</a><br><br>
+    <a href="login.html">Login</a><br><br>
+    <h2 align="center ">Available Medicines</h2> 
+       <div class="grid" >
+  <article>
+    <img src="personal_care.jpg" alt="Sample photo">
+    <div class="text">
+      <h3>Personal Care</h3>
+      <p>This will help you to improve your life with simple self care practices for your whole day.<br><b>Make time for yourself !</b></p>
+     <a href="per_care_view.html">Click here to view personal care products</a></td>
+    </div>
+    
+  </article>
+  <article>
+    <img src="health_food_drinks.jpg" alt="Sample photo">
+    <div class="text">
+      <h3>Health Corner</h3>
+      <p>We have all the healthy drinks to insure your health.<br><b>Just for the Health of it !</b></p>
+     <a href="health_food_drinks.html">Click here to view Health food and drinks</a>
+    </div>
+  </article>
+  <article>
+    <img src="ayurveda.jpg" alt="Sample photo">
+    <div class="text">
+      <br><h3>Ayurveda Medicines</h3>
+      <p>The great thing about ayurveda is that its treatment has only side benefits not side effects .<br><b>Food is medicine !</b></p>
+     <a href="ayurveda.html">Click here to view Ayurvedic Products</a>
+    </div>
+  </article>
+  
+  <article>
+    <img src="nutrition.jpg" alt="Sample photo">
+    <div class="text">
+      <h3>Nutritional Products</h3>
+      <p>Get all your nutrition with our supplements.<br><b>Eat right to get energy !</b></p>
+     <a href="nutrition.html">Click here to view Nutritional Products</a>
+    </div>
+    
+  </article>
+    
+</body>

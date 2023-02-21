@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Covid Tests</title> 
+<style>
+    
+input[type=submit]{
+   display: inline-block;
+   padding:10px 30px;
+   font-size: 20px;
+   background: #333;
+   color:#fff;
+   margin:0 5px;
+   text-transform: capitalize;
+   text-align: center;
+}
+
+
+   input[type=text], input[type=password],input[type=number] {
+  width: 35%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+    body{
+   
+  background-color: white; 
+  background-image: linear-gradient(-90deg,rgb(180, 180, 49),rgb(221, 157, 141));
+ 
+    }
+
+</style>
+</head> 
+<body > 
+<h1 align="center" >Enter your Details to book for RTPCR test</h1> <br><br>
+<form action="covid_tests.php" method="POST" align="center">
+    Enter userID: <input type="number" name="uid"><br><br>
+    Enter Name: <input type="text" name="name"><br><br>
+    Enter Age: <input type="number" name="age"><br><br>
+    Enter the date: <input type="text" name="date"><br><br>
+    <input type="submit" value="Submit"><br>
+</form>
+</body> 
+</html>

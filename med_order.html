@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Covid Tests</title> 
+<style>
+    
+input[type=submit]{display: inline-block;
+   padding:10px 30px;
+   font-size: 20px;
+   background: #333;
+   color:#fff;
+   margin:0 5px;
+   text-transform: capitalize;
+   text-align: center;
+}
+
+
+   input[type=text], input[type=password],input[type=number] {
+  width: 35%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+    body{
+   
+  background-color: white; 
+  background-image: linear-gradient(-90deg,lightblue,rgb(202, 146, 240));
+ 
+    }
+div {
+  background-color: lightgray;
+  padding-top: 10px;
+  border: 1px solid gray;
+  margin: 5% auto 15% auto; 
+  width: 50%;
+ box-shadow: 5px 5px 8px grey, 10px 10px 8px lightgrey, 15px 15px 8px white;
+  
+}
+
+    
+</style>
+</head> 
+<body > 
+<h1 align="center" style="font-size:50px;">Enter the number of the respective medicine you want to order</h1> 
+<form action="med_order.php" method="POST">
+<div class=“modal”>
+    <h3>Enter userID: <input type="number" name="uid"><br>
+    <h3>Enter Name: <input type="text" name="name"><br>
+</div>
+    Aloevera Juice: <input type="number" name="ayur1" value=0><br>
+    Amrutanjan Roll-on: <input type="number" name="ayur2" value=0><br>
+    Pain Relief: <input type="number" name="ayur3" value=0><br>
+    Zandu Nityam: <input type="number" name="ayur4" value=0><br>
+    Colgate toothpaste: <input type="number" name="pcare1" value=0><br>
+    Dove shampoo: <input type="number" name="pcare2" value=0><br>
+    Garnier Facewash: <input type="number" name="pcare3" value=0><br>
+    Santoor soap: <input type="number" name="pcare4" value=0><br>
+    Pediasure milk powder: <input type="number" name="hfood1" value=0><br>
+    Typhoo Green Tea: <input type="number" name="hfood2" value=0><br>
+    Protinex Health drink: <input type="number" name="hfood3" value=0><br>
+    Women's Horlicks: <input type="number" name="hfood4" value=0><br>
+    Neurobion tablets: <input type="number" name="nutri1" value=0><br>
+    Revital H: <input type="number" name="nutri2" value=0><br>
+    Supradyn Vitamin Tablets: <input type="number" name="nutri3" value=0><br>
+    <input type="submit" class="sub” value="Submit" ><br>
+</form>
+</body> 
+</html>
